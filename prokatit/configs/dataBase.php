@@ -1,6 +1,6 @@
 <?
 define("DB_TYPE", 'mysql');
 define("DB_HOST", 'localhost');
-define("DB_NAME", 'cq30484_test');
-define("DB_USER", 'cq30484_test');
-define("DB_PASSWORD", 'vseprokatit');
+define("DB_NAME", 'prokatit');
+define("DB_USER", 'root');
+define("DB_PASSWORD", '50198581994meks');
