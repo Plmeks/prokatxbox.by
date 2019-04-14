@@ -1,6 +1,4 @@
 <?
-define("DEFAULT_LAYOUT_VIEW", "landing");
-
 define("BUILD", false);                                  // билд для всего. от этого будет зависеть, будет ли билдиться хоть что-нибудь ниже
 
 define("IS_AUTOMATICALLY_GENERATE_MODEL_FILES", true);
