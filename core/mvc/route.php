@@ -35,17 +35,17 @@ class Route {
 
         if($checkMethod["success"]) {
             self::allowGetResponses($routes, 3);
-            $checkMethod["object"] ->$checkMethod["method"]();
+            $checkMethod["object"] -> {$checkMethod["method"]}();
         } else {
             $checkMethod = self::methodCheck("home", $urlParent);
             if($checkMethod["success"]) {
                 self::allowGetResponses($routes, 3);
-                $checkMethod["object"] ->$checkMethod["method"]();
+                $checkMethod["object"] -> {$checkMethod["method"]}();
             } else {
                 $checkMethod = self::methodCheck($urlParent, "index");
                 if($checkMethod["success"]) {
                     self::allowGetResponses($routes, 2);
-                    $checkMethod["object"] ->$checkMethod["method"]();
+                    $checkMethod["object"] -> {$checkMethod["method"]}();
                 } else {
                     self::error404();
                 }

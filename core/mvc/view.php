@@ -35,7 +35,7 @@
 
         private function generatePagePartialViews() {
             foreach($this->partials as $val)
-                if($val["simpleView"])
+                if($val["simpleView"] ?? [])
                     $this->generatePageView();
                 else
                     $this->generatePartial($val["name"]);

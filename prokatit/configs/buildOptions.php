@@ -24,3 +24,4 @@ define("IS_GENERATE_SCRIPT_CUSTOM_FILES", true);         //
 define("SAMPLE_FOR_GENERATING_SIMPLE_VIEWS", "");       // название генерируемого шаблона для обычных вьюх, находящегося в libs/fileManager/samples
 define("SAMPLE_FOR_GENERATING_DAO_VIEWS", "viewDao");   // название генерируемого шаблона для dao-вьюх, находящегося в libs/fileManager/samples
 define("SAMPLE_FOR_GENERATING_PARTIAL_VIEWS", "");      // название генерируемого шаблона для вью-блоков, находящегося в libs/fileManager/samples
+define("DEFAULT_LAYOUT_VIEW", "landing");
