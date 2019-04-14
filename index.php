@@ -1,8 +1,6 @@
 <?php
     ini_set("display_errors", 1);
 
-    include_once "config.php";
-
 	include_once "core/mvc/model.php";
 	include_once "core/mvc/view.php";
 	include_once "core/mvc/controller.php";
@@ -17,6 +15,8 @@
     include_once "core/libs/fileManager/fileManager.php";
     include_once "core/libs/transliteration/transliteration.php";
     include_once "core/libs/JShrink/src/JShrink/Minifier.php";
+
+    include_once "config.php";
 
     Route::start();
 
