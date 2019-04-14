@@ -18,7 +18,7 @@ $(document).ready(function(){
                         },
                         remote: {
                             message: 'Такого пользователя не существует',
-                            url: "https://" + window.location.host + "/login/isDataExists",
+                            url: "http://" + window.location.host + "/login/isDataExists",
                             type: 'POST',
                             data: {
                                 type: "login or email"
@@ -44,7 +44,7 @@ $(document).ready(function(){
                         },
                         remote: {
                             message: 'Неверный пароль',
-                            url: "https://" + window.location.host + "/login/isDataExists",
+                            url: "http://" + window.location.host + "/login/isDataExists",
                             type: 'POST',
                             data: function(validator, $field, value) {
                                 return {
@@ -84,7 +84,7 @@ $(document).ready(function(){
                         },
                         remote: {
                             message: 'Такой пользователь уже зарегестрирован',
-                            url: "https://" + window.location.host + "/registration/isDataDisable",
+                            url: "http://" + window.location.host + "/registration/isDataDisable",
                             type: 'POST',
                             data: {
                                 type: 'login'
@@ -106,8 +106,8 @@ $(document).ready(function(){
                             message: 'Неверный формат e-mail адреса'
                         },
                         remote: {
-                            message: 'Такой email уже зарегестрирован!' + "<a href='" + "https://" + window.location.host + "/login" +"'>Авторизоваться</a>",
-                            url: "https://" + window.location.host + "/registration/isDataDisable",
+                            message: 'Такой email уже зарегестрирован!' + "<a href='" + "http://" + window.location.host + "/login" +"'>Авторизоваться</a>",
+                            url: "http://" + window.location.host + "/registration/isDataDisable",
                             type: 'POST',
                             data: {
                                 type: 'email'
@@ -147,7 +147,7 @@ $(document).ready(function(){
 
             $.ajax({
                 type: "POST",
-                url: "https://" + window.location.host + "/registration/registerUser",
+                url: "http://" + window.location.host + "/registration/registerUser",
                 data: $(this).serialize(),
                 success : (function(response){
                     window.location.reload();

@@ -8,7 +8,7 @@ app.controller('clientsController', function ($scope, helperMethodsService) {
             data.push({
                 text: link.name,
                 selectable: false,
-                href: "https://" + window.location.host +
+                href: "http://" + window.location.host +
                 "/clients/paper/" + link.shortName,
                 state: ($scope.paper && $scope.paper.shortName && link.shortName == $scope.paper.shortName) ? {selected: true} : {}
             });

@@ -8,7 +8,7 @@ $(document).ready(function() {
         data: [{
             text: "Советы и подсказки",
             selectable: false,
-            href: "https://" + window.location.host +
+            href: "http://" + window.location.host +
                 "/admin"
         }, {
             text: "Главная страница",
@@ -16,12 +16,12 @@ $(document).ready(function() {
             nodes: [{
                 text: "Конкурсы",
                 selectable: false,
-                href: "https://" + window.location.host +
+                href: "http://" + window.location.host +
                     "/admin/competition"
             }, {
                 text: "Популярные товары",
                 selectable: false,
-                href: "https://" + window.location.host +
+                href: "http://" + window.location.host +
                     "/admin/popularProducts"
             }]
         }, {
@@ -30,7 +30,7 @@ $(document).ready(function() {
             nodes: [{
                 text: "Статьи",
                 selectable: false,
-                href: "https://" + window.location.host +
+                href: "http://" + window.location.host +
                     "/admin/articles"
             }]
         }, {
@@ -39,12 +39,12 @@ $(document).ready(function() {
             nodes: [{
                 text: "Категории",
                 selectable: false,
-                href: "https://" + window.location.host +
+                href: "http://" + window.location.host +
                     "/admin/categories"
             }, {
                 text: "Товары",
                 selectable: false,
-                href: "https://" + window.location.host +
+                href: "http://" + window.location.host +
                     "/admin/products"
             }]
         }]

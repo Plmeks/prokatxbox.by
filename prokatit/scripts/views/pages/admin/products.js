@@ -3,8 +3,8 @@ adminApp.controller('adminController', function($scope) {
 });
 
 $(document).ready(function () {
-    var serverUrl =  "https://" + window.location.host + "/admin/";
-    var imageUrl = "https://" + window.location.host + "/prokatit/content/images/";
+    var serverUrl =  "http://" + window.location.host + "/admin/";
+    var imageUrl = "http://" + window.location.host + "/prokatit/content/images/";
 
     $("#grid").kendoGrid({
         dataSource: {
@@ -419,8 +419,8 @@ $(document).ready(function () {
     }
 
     function injectBootstrapToEditors() {
-        var bootstrapCdnStyle = "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />";
-        var bootstrapCdnScript = "<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>";
+        var bootstrapCdnStyle = "<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />";
+        var bootstrapCdnScript = "<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>";
         $('iframe').contents().find("head").append(bootstrapCdnStyle + bootstrapCdnScript);
     }
 

@@ -21,7 +21,7 @@ $(document).ready(function() {
                         },
                         remote: {
                             message: 'Такой пользователь уже зарегестрирован',
-                            url: "https://" + window.location.host + "/registration/isDataDisable",
+                            url: "http://" + window.location.host + "/registration/isDataDisable",
                             type: 'POST',
                             data: {
                                 type: 'login'
@@ -43,8 +43,8 @@ $(document).ready(function() {
                             message: 'Неверный формат e-mail адреса'
                         },
                         remote: {
-                            message: 'Такой email уже зарегестрирован!' + "<a href='" + "https://" + window.location.host + "/login" +"'>Авторизоваться</a>",
-                            url: "https://" + window.location.host + "/registration/isDataDisable",
+                            message: 'Такой email уже зарегестрирован!' + "<a href='" + "http://" + window.location.host + "/login" +"'>Авторизоваться</a>",
+                            url: "http://" + window.location.host + "/registration/isDataDisable",
                             type: 'POST',
                             data: {
                                 type: 'email'
@@ -84,10 +84,10 @@ $(document).ready(function() {
 
             $.ajax({
                 type: "POST",
-                url: "https://" + window.location.host + "/registration/registerUser",
+                url: "http://" + window.location.host + "/registration/registerUser",
                 data: $(this).serialize(),
                 success : (function(response){
-                    window.location.href = "https://" + window.location.host + "/dashboard";
+                    window.location.href = "http://" + window.location.host + "/dashboard";
                 }.bind(this))
             });
         });

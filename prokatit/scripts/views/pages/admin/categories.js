@@ -3,8 +3,8 @@ adminApp.controller('adminController', function($scope) {
 });
 
 $(document).ready(function () {
-    var serverUrl =  "https://" + window.location.host + "/admin/";
-    var imageUrl = "https://" + window.location.host + "/prokatit/content/images/";
+    var serverUrl =  "http://" + window.location.host + "/admin/";
+    var imageUrl = "http://" + window.location.host + "/prokatit/content/images/";
 
     $("#grid").kendoGrid({
         dataSource: {

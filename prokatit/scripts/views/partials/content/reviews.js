@@ -1,6 +1,6 @@
 app.controller('ReviewsController', function($scope) {
 	﻿// $(document).ready(function(){
-﻿		var serverUrl =  "https://" + window.location.host + "/home/";
+﻿		var serverUrl =  "http://" + window.location.host + "/home/";
 	﻿	
 	    $.ajax({
 	        type: "GET",

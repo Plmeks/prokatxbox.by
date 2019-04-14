@@ -262,13 +262,13 @@ app.controller('CartController', function($scope, cartService, helperMethodsServ
 
                 $.ajax({
                     type: "POST",
-                    url: "https://" + window.location.host + "/cart/makeOrder",
+                    url: "http://" + window.location.host + "/cart/makeOrder",
                     data: $(this).serialize() + "&price=" + $scope.getTotalPrice() + "&productIds=" + productIds + "&countDays=" + countDays,
                     dataType: "json",
                     success : (function(response){
                         localStorage.clear();
                         confirm("Успешно оформлено!");
-                        window.location.href = "https://" + window.location.host + "/cart/success";
+                        window.location.href = "http://" + window.location.host + "/cart/success";
                     }.bind(this))
                 });
             })

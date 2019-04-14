@@ -3,7 +3,7 @@ adminApp.controller('adminController', function($scope) {
 });
 
 $(document).ready(function () {
-    var serverUrl =  "https://" + window.location.host + "/admin/popularProducts";
+    var serverUrl =  "http://" + window.location.host + "/admin/popularProducts";
 
     $("#grid").kendoGrid({
         dataSource: {
@@ -93,7 +93,7 @@ $(document).ready(function () {
                     type: "odata",
                     transport: {
                         read: {
-                            url: "https://" + window.location.host + "/admin/products",
+                            url: "http://" + window.location.host + "/admin/products",
                             dataType: "json"
                         }
                     },

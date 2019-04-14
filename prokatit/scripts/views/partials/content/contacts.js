@@ -38,7 +38,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: "POST",
-            url: "https://" + window.location.host + "/home/sendEmail",
+            url: "http://" + window.location.host + "/home/sendEmail",
             data: $(this).serialize(),
             dataType: "json",
             success : (function(response){

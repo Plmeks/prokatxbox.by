@@ -16,7 +16,7 @@
                         },
                         remote: {
                             message: 'Такого пользователя не существует',
-                            url: "https://" + window.location.host + "/login/isDataExists",
+                            url: "http://" + window.location.host + "/login/isDataExists",
                             type: 'POST',
                             data: {
                                 type: "login or email"
@@ -31,7 +31,7 @@
                         },
                         remote: {
                             message: 'Неверный пароль',
-                            url: "https://" + window.location.host + "/login/isDataExists",
+                            url: "http://" + window.location.host + "/login/isDataExists",
                             type: 'POST',
                             data: function(validator, $field, value) {
                                 return {
@@ -58,7 +58,7 @@
             }
 
             if(data.field === 'password') {
-                window.location.href = "https://" + window.location.host + "/dashboard";
+                window.location.href = "http://" + window.location.host + "/dashboard";
             }
         })
         .on('err.field.fv', function(e, data) {

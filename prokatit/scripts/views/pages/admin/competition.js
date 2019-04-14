@@ -4,7 +4,7 @@ adminApp.controller('adminController', function($scope) {
 
 
 $(document).ready(function () {
-    var serverUrl =  "https://" + window.location.host + "/admin/competition";
+    var serverUrl =  "http://" + window.location.host + "/admin/competition";
 
     $("#grid").kendoGrid({
         dataSource: {

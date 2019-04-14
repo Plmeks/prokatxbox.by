@@ -52,12 +52,12 @@ $(document).ready(function () {
 
             $.ajax({
                 type: "POST",
-                url: "https://" + window.location.host + "/home/makeOrder",
+                url: "http://" + window.location.host + "/home/makeOrder",
                 data: $(this).serialize() + "&countDays=" + countDays,
                 dataType: "json",
                 success: (function (response) {
                     confirm("Успешно оформлено!");
-                    window.location.href = "https://" + window.location.host + "/cart/success";
+                    window.location.href = "http://" + window.location.host + "/cart/success";
                 }.bind(this))
             });
 
@@ -68,7 +68,7 @@ $(document).ready(function () {
     $("#console").change(function () {
         if (this.value == "catalogue") {
             this.value = "";
-            window.location.href = "https://" + window.location.host + "/catalogue";
+            window.location.href = "http://" + window.location.host + "/catalogue";
         }
     });
 

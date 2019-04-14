@@ -165,7 +165,7 @@
 
 
         public function buildScripts($scripts, $controllerInfo){
-            $scriptString;
+            $scriptString = '';
             $scriptFolder = PROJECT ."scripts/";
 
             if(IS_GENERATE_SCRIPT_CUSTOM_FILES) {

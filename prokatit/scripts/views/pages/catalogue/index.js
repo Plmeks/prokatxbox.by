@@ -67,7 +67,7 @@ app.controller('CatalogueShowController', function($scope, $sce, cartService) {
                     text: subItem.name,
                     selectable: false,
                     state: ($scope.currentBranch.shortName == subItem.shortName && $scope.currentBranch.id == subItem.id)? {selected: true}: {},
-                    href: "https://" + window.location.host +
+                    href: "http://" + window.location.host +
                     "/catalogue/category/" + item.category.shortName + "/subcategory/" + subItem.shortName
                 });
             });
@@ -77,7 +77,7 @@ app.controller('CatalogueShowController', function($scope, $sce, cartService) {
                 selectable: false,
                 state: ($scope.currentBranch.shortName == item.category.shortName && $scope.currentBranch.id == item.category.id)? {selected: true}: 
                 	(($scope.currentBranch.categoryShortName && $scope.currentBranch.categoryShortName == item.category.shortName)? {expanded: true}: {expanded: false}),
-                href: "https://" + window.location.host +
+                href: "http://" + window.location.host +
                 "/catalogue/category/" + item.category.shortName,
                 nodes: nodes
             });

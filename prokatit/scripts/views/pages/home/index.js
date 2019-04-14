@@ -1,5 +1,5 @@
 app.controller('PopularProductsController', function($scope, cartService) {
-    var serverUrl =  "https://" + window.location.host + "/home/";
+    var serverUrl =  "http://" + window.location.host + "/home/";
 
     $scope.chunk = function(value, size) {
         var chunked = [];

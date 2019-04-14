@@ -52,7 +52,7 @@
 
         $.ajax({
             type: "POST",
-            url: "https://" + window.location.host + "/home/sendMail",
+            url: "http://" + window.location.host + "/home/sendMail",
             data: "dateFrom=" + dateFrom + "&dateTo=" + dateTo + "&console=" + console + "&phone=" + phone,
             success : function(text){
                 if (text == "success"){
