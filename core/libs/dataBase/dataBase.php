@@ -1,7 +1,7 @@
 <?php
 	class DataBase extends PDO {
 		function __construct(){
-            $dsn = constant('DB_TYPE') .":" ."host=" .constant('DB_HOST') .";" ."dbname=" .constant('DB_NAME');
+            $dsn = constant('DB_TYPE') .":" ."host=" .constant('DB_HOST') .";" ."dbname=" .constant('DB_NAME') .";" ."charset=utf8";
             $user = constant('DB_USER');
             $password = constant('DB_PASSWORD');
 
